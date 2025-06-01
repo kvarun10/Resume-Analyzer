@@ -1,0 +1,35 @@
+{
+    "entities": {
+        "NAME": "Vaidehi Mayankkumar Patel\n",
+        "EMAILS": [],
+        "PHONES": [],
+        "DEGREES": [],
+        "ORG": [
+            "Bachelor of Technology",
+            "LinkedIn Profile\nEducation",
+            "Nehru National Institute of Technology Allahabad",
+            "CSE",
+            "International School\n2022",
+            "International School\n2020",
+            "Technical Skills",
+            "HTML",
+            "CSS",
+            "Operating Systems",
+            "CISCO ThingQbator",
+            "MNNIT Alumni Association",
+            "Darpan Dramatics Committee",
+            "Basketball Club"
+        ]
+    },
+    "skills": [
+        "css",
+        "html",
+        "python"
+    ],
+    "experience": "",
+    "education": "•Motilal Nehru National Institute of Technology Allahabad\n2nd Year\nB.Tech CSE\nCGPA: 8.2\n•Puna International School\n2022\nCBSE Class 12\nPercentage: 88.4\n•Puna International School\n2020\nCBSE Class 10\nPercentage: 89\nTechnical",
+    "sections": {
+        "Education": "•Motilal Nehru National Institute of Technology Allahabad\n2nd Year\nB.Tech CSE\nCGPA: 8.2\n•Puna International School\n2022\nCBSE Class 12\nPercentage: 88.4\n•Puna International School\n2020\nCBSE Class 10\nPercentage: 89\nTechnical",
+        "Skills": "and Interests\nLanguages: C,C++,Python,HTML,CSS\nDeveloper Tools:VS Code\nDomain Knowledge: OOP,Operating Systems\nSoft"
+    }
+}
