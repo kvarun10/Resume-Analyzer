@@ -1,0 +1,122 @@
+{
+    "name": "VARUN KAUSHAL",
+    "email": "kvarun10plus@gmail.com",
+    "phone": "+91-7901889088",
+    "skills": [
+        "Python",
+        "JavaScript",
+        "C++",
+        "C",
+        "Git",
+        "Communication",
+        "Teamwork"
+    ],
+    "education": [
+        "bachelor of technology",
+        "b.tech. in computer science and engineering"
+    ],
+    "spacy_entities": {
+        "PERSON": [
+            "VARUN KAUSHAL\n +91-7901889088",
+            "Patiala",
+            "YOLOv8",
+            "C++",
+            "C++",
+            "Problem Solving",
+            "Algorithms\n• Machine Learning\n• Object Oriented Programming\n• Web Development\nPositions of Responsibility\n•"
+        ],
+        "ORG": [
+            "Computer Science and Engineering\n",
+            "Nehru National Institute of Technology",
+            "Allahabad",
+            "Computer Science and Engineering",
+            "•Bhupindra International Public School",
+            "Intermediate Education",
+            "•Yadavindra Public School",
+            "High School Education",
+            "Tools & Technologies",
+            "CNN",
+            "Unoccupied-Clean",
+            "Unoccupied-Dirty",
+            "Tools & technologies",
+            "Technical Skills",
+            "JavaScript",
+            "HTML/CSS\n",
+            "Express.js",
+            "Operating Systems",
+            "ECell Design Team"
+        ],
+        "GPE": [
+            "Patiala",
+            "C++"
+        ],
+        "DATE": [
+            "2023",
+            "2027",
+            "2021",
+            "2020",
+            "2021",
+            "2025",
+            "April 2025",
+            "C++\nMarch 2025 - April 2025",
+            "2025",
+            "2023 - Present",
+            "Mar 2023",
+            "June - 2023"
+        ]
+    },
+    "llm_entities": {
+        "PERSON": [],
+        "ORG": [
+            "KAUSHA",
+            "of Technology",
+            "Computer Science and Engineering",
+            "Motilal Nehru National Institute of Technology Allah",
+            "##ag",
+            "Motilal Nehru National Institute of Technology",
+            "Computer",
+            "and Engineering",
+            "##hupin",
+            "International Public",
+            "B",
+            "S",
+            "##vin",
+            "Public",
+            "C",
+            "S",
+            "E",
+            "Det",
+            "Too",
+            "& Technologies",
+            "Y",
+            "Open",
+            "CNN"
+        ],
+        "LOC": [
+            "##abad",
+            "P",
+            "##ray",
+            "##raj",
+            "Allahabad",
+            "B",
+            "##dra",
+            "Pat",
+            "##iala",
+            "C",
+            "Ya",
+            "##da",
+            "##dra",
+            "Pat",
+            "##iala",
+            "I"
+        ],
+        "MISC": [
+            "Science",
+            "Y",
+            "Python",
+            "C",
+            "C",
+            "C"
+        ]
+    }
+}
