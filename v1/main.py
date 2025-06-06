@@ -1,10 +1,11 @@
 # main.py
 
+import json
 from parsing.pdf_parser import extract_text
 from utils.text_preprocessor import preprocess_text
 from utils.rule_based_extractor import RuleBasedExtractor
+from utils.spacy_ner_extractor import SpacyNERExtractor
 from utils.llm_based_extractor import extract_entities_from_api
-
 
 # Step 1: Read PDF
 pdf_path = r"D:\resume-analyzer\VarunKaushal-Resume.pdf"
@@ -14,38 +15,28 @@ resume_text = extract_text(pdf_path)
 tokens = preprocess_text(resume_text)
 
 # Step 3: Rule-Based Extraction
-print("\n--- Using Rule-Based Extractor ---")
-extractor = RuleBasedExtractor(resume_text, tokens)
-name = extractor.extract_name()
-email = extractor.extract_email()
-phone = extractor.extract_phone()
-skills = extractor.extract_skills()
-education = extractor.extract_education()
+rule_extractor = RuleBasedExtractor(resume_text, tokens)
+rule_based_data = {
+    "name": rule_extractor.extract_name(),
+    "email": rule_extractor.extract_email(),
+    "phone": rule_extractor.extract_phone(),
+    "skills": rule_extractor.extract_skills(),
+    "education": rule_extractor.extract_education()
+}
 
-# Output
-print("Name:", name)
-print("Email:", email)
-print("Phone:", phone)
-print("Skills:", skills)
-print("Education:", education)
+# Step 4: spaCy NER Extraction
+ner_extractor = SpacyNERExtractor()
+ner_entities = ner_extractor.extract_entities(resume_text)
 
-print("\n--- Using LLM-Based Extractor ---")
+# Step 5: LLM-Based Extraction
 llm_entities = extract_entities_from_api(resume_text)
 
-print("LLM Entities:")
-for key, values in llm_entities.items():
-    print(f"{key}: {values}")
+# Combine all outputs
+combined_output = rule_based_data.copy()
+combined_output["spacy_entities"] = ner_entities
+combined_output["llm_entities"] = llm_entities
 
-#FOR MERGING THEM BOTH
-# def merge_extracted_data(rule_based_data, llm_data):
-#     merged = {
-#         "name": rule_based_data.get("name"),
-#         "email": rule_based_data.get("email"),
-#         "phone": rule_based_data.get("phone"),
-#         "skills": list(set(rule_based_data.get("skills", []) + llm_data.get("MISC", []))),
-#         "education": rule_based_data.get("education", []),
-#         "organizations": list(set(llm_data.get("ORG", []))),
-#         "locations": list(set(llm_data.get("LOC", []))),
-#         "people": list(set(llm_data.get("PERSON", []))),
-#     }
-#     return merged
+# Save to JSON file
+with open("extracted_data.json", "w", encoding="utf-8") as f:
+    json.dump(combined_output, f, indent=4, ensure_ascii=False)
+
