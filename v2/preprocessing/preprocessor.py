@@ -26,7 +26,7 @@ except LookupError:
     nltk.download('stopwords', quiet=True)
     stop_words = set(stopwords.words('english'))
 
-def clean_resume_text(text):
+def preprocess_text(text):
     """
     Clean and preprocess resume text
     
@@ -75,6 +75,6 @@ def remove_special_characters(text):
 # Test function
 if __name__ == "__main__":
     sample_text = "Hello! This is a sample resume text with special characters @#$% and numbers 123."
-    cleaned = clean_resume_text(sample_text)
+    cleaned = preprocess_text(sample_text)
     print("Original:", sample_text)
     print("Cleaned tokens:", cleaned)
