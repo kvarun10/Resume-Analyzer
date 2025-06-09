@@ -1,5 +1,10 @@
 {
-    "entities": {
+    "skills": [
+        "python",
+        "html",
+        "css"
+    ],
+    "spaCy_entities": {
         "NAME": "Vaidehi Mayankkumar Patel\n",
         "EMAILS": [],
         "PHONES": [],
@@ -21,15 +26,57 @@
             "Basketball Club"
         ]
     },
-    "skills": [
-        "css",
-        "html",
-        "python"
-    ],
-    "experience": "",
-    "education": "•Motilal Nehru National Institute of Technology Allahabad\n2nd Year\nB.Tech CSE\nCGPA: 8.2\n•Puna International School\n2022\nCBSE Class 12\nPercentage: 88.4\n•Puna International School\n2020\nCBSE Class 10\nPercentage: 89\nTechnical",
-    "sections": {
+    "HF_entities_BERT_API": {
+        "PERSON": [],
+        "ORG": [
+            "of Technology",
+            "Computer Science and Engineering",
+            "##H",
+            "Motilal Nehru National Institute of Technology Allahabad",
+            "P",
+            "##ag",
+            "##I",
+            "Motilal Nehru National Institute of Technology Allah",
+            "Puna International School",
+            "CBS",
+            "Puna International School",
+            "CBSE",
+            "AIML",
+            "En",
+            "##p",
+            "C",
+            "##ISCO ThingQbat",
+            "MNNIT Alumni Association",
+            "Darpan Dramatics Committee",
+            "Basketball Club"
+        ],
+        "LOC": [
+            "##ray",
+            "##raj",
+            "##abad"
+        ],
+        "MISC": [
+            "C",
+            "C",
+            "Python"
+        ]
+    },
+    "experience_regex": "",
+    "education_regex": "•Motilal Nehru National Institute of Technology Allahabad\n2nd Year\nB.Tech CSE\nCGPA: 8.2\n•Puna International School\n2022\nCBSE Class 12\nPercentage: 88.4\n•Puna International School\n2020\nCBSE Class 10\nPercentage: 89\nTechnical",
+    "sections_regex": {
         "Education": "•Motilal Nehru National Institute of Technology Allahabad\n2nd Year\nB.Tech CSE\nCGPA: 8.2\n•Puna International School\n2022\nCBSE Class 12\nPercentage: 88.4\n•Puna International School\n2020\nCBSE Class 10\nPercentage: 89\nTechnical",
         "Skills": "and Interests\nLanguages: C,C++,Python,HTML,CSS\nDeveloper Tools:VS Code\nDomain Knowledge: OOP,Operating Systems\nSoft"
-    }
+    },
+    "structured_llm": {
+        "projects": "Project 1 details... Project 2 details...Project 1 details... Project 2 details...",
+        "education": "B.Tech in Computer Science from XYZ...B.Tech in Computer Science from XYZ..."
+    },
+    "score": 4,
+    "rule_feedback": [
+        "Email not found.",
+        "Phone number missing.",
+        "Experience section seems weak or missing.",
+        "Consider adding more skills."
+    ],
+    "llm_feedback": "\nYou're an expert resume reviewer.\n1. Rate this resume out of 10.\n2. Briefly explain the reasoning.\n3. Suggest 2–3 improvements.\n\nResume:\nVaidehi Mayankkumar Patel\n +91-9879118826\nRoll No.: 20233579\n# vaidehipatel1312@gmail.com\nBachelor of Technology\n# vaidehi.20233579@mnnit.ac.in\nComputer Science and Engineering\n§ GitHub Profile\nMotilal Nehru National Institute of Technology Allahabad,\nPrayagraj\nï LinkedIn Profile\nEducation\n•Motilal Nehru National Institute of Technology Allahabad\n2nd Year\nB.Tech CSE\nCGPA: 8.2\n•Puna International School\n2022\nCBSE Class 12\nPercentage: 88.4\n•Puna International School\n2020\nCBSE Class 10\nPercentage: 89\nTechnical Skills and Interests\nLanguages: C,C++,Python,HTML,CSS\nDeveloper Tools:VS Code\nDomain Knowledge: OOP,Operating Systems\nSoft Skills:Leadership, Communication, Management, Creativity\nAreas of Interest:Data Structures and ALgorithms, AIML, Entrepreneurship and Innovation\nPositions of Responsibility\nMember, CISCO ThingQbator\n2027\n•Mentorship Team, MNNIT Alumni Association\n2027\n•Member, Darpan Dramatics Committee\n2027\n•Member, Basketball Club\n2027\nAchievements\n•1st Position Culrav 2k24, Monologue Act\n2024\n\n1. I would rate this resume a 6 out of 10.\n\n2. The reason for this rating is that the resume is organized well but lacks specific details about the candidate's projects, internships, and work experiences. It also lacks a professional summary or objective, which is crucial for conveying the candidate's career goals and motivation. Additionally, the resume could benefit from more bullet points and action verbs to make the achievements and responsibilities more impactful.\n\n3. Here are 2-3 improvements:\n\n   a. Add a professional summary or objective that succinctly explains the candidate's career goals and the skills they bring to the table.\n\n   b. Provide more specific details about the candidate's projects, internships, and work experiences. Instead of listing the technical skills and languages they know, describe how they have applied them in real-world projects or work experiences.\n\n   c. Use action verbs throughout the resume to make the achievements and responsibilities more impactful. For example, instead of saying \"Member, Darpan Dramatics Committee\", say \" Led and organized theatrical events as a member of the Darpan Dramatics Committee\". Similarly, instead of saying \"1st Position Culrav 2k24, Monologue Act\", say \"Received first place in the Monologue Act competition during Culrav 2k24\"."
 }
