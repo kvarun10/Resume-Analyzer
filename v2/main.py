@@ -1,3 +1,7 @@
+import json
+import os
+from dotenv import load_dotenv
+
 from parsing.pdf_parser import extract_text
 from preprocessing.preprocessor import preprocess_text
 from parsing.extractor import (
@@ -7,10 +11,11 @@ from parsing.extractor import (
     extract_education_section,
     extract_skills,
     classify_sections,
-    # extract_sections_via_llm
 )
 from scoring.scorer import rule_based_score, llm_based_score
-import json
+
+# Load environment variables from .env file
+load_dotenv()
 
 def main():
     # 1. Extract text from PDF
